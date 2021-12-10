@@ -1,7 +1,7 @@
 /**
  * URL de acceso a recurso
  */
-const BASE_URL = "http://localhost:8080/api/user";
+const BASE_URL = "http://168.138.130.41:8081/api/user";
 /**
  * Se utiliza para que añada el evento despues
  * de que los elementos HTML esten cargados
