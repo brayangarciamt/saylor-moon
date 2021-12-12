@@ -1,8 +1,8 @@
 /**
  * URL de acceso a recurso
  */
-const BASE_URL_ORDER = "http://localhost:8080/api/order";
-const BASE_URL_ACCESSORY = "http://localhost:8080/api/accessory";
+const BASE_URL_ORDER = "http://168.138.130.41:8082/api/order";
+const BASE_URL_ACCESSORY = "http://168.138.130.41:8082/api/accessory";
 
 /**
  * Muestra la tabla de productos, 
