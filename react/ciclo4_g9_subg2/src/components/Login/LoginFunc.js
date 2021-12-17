@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useApp } from "../../context/GlobalSession";
-const serverUrl = "http://localhost:8080/";
+const serverUrl = "http://localhost:8083/";
 
 const LoginFunc = ({ userData }) => {
   const { isLoged, setIsLoged } = useApp();
