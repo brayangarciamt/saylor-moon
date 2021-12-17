@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
 import * as moment from "moment";
 
-const serverUrl = "http://localhost:8080/";
+const serverUrl = "http://localhost:8084/";
 
 export const DetailOrder = ({ orderId }) => {
   const headers = ["Fecha", "N° pedido", "Estado"];

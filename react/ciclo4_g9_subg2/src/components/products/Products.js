@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
 
-const serverUrl = "http://localhost:8080/";
+const serverUrl = "http://localhost:8084/";
 
 export const Products = () => {
     const [price, setPrice] = useState("");

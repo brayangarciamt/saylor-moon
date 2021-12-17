@@ -6,7 +6,7 @@ import { UserEdit } from "../userEdit/UserEdit";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserEdit } from '@fortawesome/free-solid-svg-icons'
 
-const serverUrl = "http://localhost:8080/";
+const serverUrl = "http://localhost:8084/";
 ReactModal.setAppElement('body');
 
 export const Birthday = () => {
@@ -118,7 +118,7 @@ export const Birthday = () => {
                                 <tr key={row.id}>
                                     <td>{row.identification}</td>
                                     <td>{row.name}</td>
-                                    <td>{moment(row.birthtDay).format("DD-MM-YYYY")}</td>
+                                    <td>{moment.utc(row.birthtDay).format("DD-MM-YYYY")}</td>
                                     <td>{row.email}</td>
                                     <td>{row.cellPhone}</td>
                                     <td>{row.address}</td>

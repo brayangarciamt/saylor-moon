@@ -4,7 +4,7 @@ import ReactModal from "react-modal";
 import { DetailOrder } from "../detail-order/DetailOrder";
 import * as moment from "moment";
 
-const serverUrl = "http://localhost:8080/";
+const serverUrl = "http://localhost:8084/";
 ReactModal.setAppElement('body');
 
 export const Orders = () => {

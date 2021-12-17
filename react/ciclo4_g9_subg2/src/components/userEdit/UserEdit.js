@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Form } from "react-bootstrap";
 import * as moment from "moment";
 
-const serverUrl = "http://localhost:8080/";
+const serverUrl = "http://localhost:8084/";
 
 export const UserEdit = ({ userId }) => {
   const [dataUser, setDataUser] = useState({});
@@ -34,7 +34,15 @@ export const UserEdit = ({ userId }) => {
     document.getElementById("cellphoneModal").value = data.cellPhone;
     document.getElementById("tipoModal").value = data.type;
     //console.log(data.birthtDay);
-    document.getElementById("birthDayModal").value = moment(data.birthtDay).format("YYYY-MM-DD");
+
+    /**
+     * Se usa el parametro utc despues de moment para evitar modificacion en,
+     * la fecha mostrada en modal de edicion usuario
+     * 
+     * fuente: https://stackoverflow.com/questions/50608132/difference-between-moment-utcdate-and-momentdate-utc
+     *
+     */
+    document.getElementById("birthDayModal").value = moment.utc(data.birthtDay).format("YYYY-MM-DD");
 
     setDataUser(data);
   }
